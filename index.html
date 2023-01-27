@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Lev3_4_projekt_js-einführung_einkommensteuer-berechnung </title>
+</head>
+
+<body>
+    <section class="content-wrap">
+        <form action="#" onsubmit="return false">
+
+            <article class="cases">
+                <input type="radio" name="year" value="2020" id="twenty" checked>
+                <label for="2020">2020</label>
+                <input type="radio" name="year" value="2021" id="twentyOne">
+                <label for="2021">2021</label>
+                <input type="radio" name="year" value="2022" id="twentyTwo">
+                <label for="2022">2022</label>
+            </article>
+
+            <article class="basicSplit">
+                <input type="radio" name="taxModel" value="basic" id="basic" checked onchange="change()">
+                <label for="basic">Grundtarif</label>
+                <input type="radio" name="taxModel" value="split" id="split" onchange="change()">
+                <label for="split">Splittingtarif</label>
+            </article>
+
+            <article class="inputBasic">
+                <input type="text" name="taxableIncome" id="humanOne">
+            </article>
+
+            <article class="inputSplit">
+                <input type="text" name="taxableIncome" id="humanTwo">
+            </article>
+
+            <button type="submit" id="submit">Berechnen</button>
+
+        </form>
+
+        <hr>
+
+        <section>
+            <p id="year">Zu zahlende Einkommensteuer:</p>
+            <p id="output">0.00 €</p>
+        </section>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
