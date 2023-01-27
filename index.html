@@ -11,22 +11,34 @@
 
 <body>
     <section class="content-wrap">
+        <h1>Einkommenssteuerechner</h1>
         <form action="#" onsubmit="return false">
-
+            <p>Für welches Jahr soll die Steuer berechnet werden?</p>
             <article class="cases">
-                <input type="radio" name="year" value="2020" id="twenty" checked>
-                <label for="2020">2020</label>
-                <input type="radio" name="year" value="2021" id="twentyOne">
-                <label for="2021">2021</label>
-                <input type="radio" name="year" value="2022" id="twentyTwo">
-                <label for="2022">2022</label>
+                <div>
+                    <input type="radio" name="year" value="2020" id="twenty" checked>
+                    <label for="2020">2020</label>
+                </div>
+                <div>
+                    <input type="radio" name="year" value="2021" id="twentyOne">
+                    <label for="2021">2021</label>
+                </div>
+                <div>
+                    <input type="radio" name="year" value="2022" id="twentyTwo">
+                    <label for="2022">2022</label>
+                </div>
             </article>
 
+            <p>Wähle zwischen Grundtarif oder Splittingtarif:</p>
             <article class="basicSplit">
+                <div>
                 <input type="radio" name="taxModel" value="basic" id="basic" checked onchange="change()">
                 <label for="basic">Grundtarif</label>
+            </div>
+            <div>
                 <input type="radio" name="taxModel" value="split" id="split" onchange="change()">
                 <label for="split">Splittingtarif</label>
+            </div>
             </article>
 
             <article class="inputBasic">

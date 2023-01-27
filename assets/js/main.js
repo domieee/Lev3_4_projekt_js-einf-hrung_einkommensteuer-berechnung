@@ -20,7 +20,7 @@ function calculateTwenty(zvE, ESt) {
     if (zvE <= 9408) {
         ESt = 0
     } else if (zvE <= 14532) {
-        ESt = (972.87 * (zvE - 9408) / 10000 + 1400) * 2
+        ESt = (972.87 * (zvE - 9408) / 10000 + 1400) * (zvE - 9408) / 10000
     } else if (zvE <= 57051) {
         ESt = (212.02 * (zvE - 14532) / 10000 + 2397) * (zvE - 14532) / 10000 + 972.79
     } else if (zvE <= 270500) {

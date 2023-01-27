@@ -1,23 +1,56 @@
-@import './assets/base/_reset.scss';
-@import './assets/base/_typography.scss';
-@import './assets/components/_buttons.scss';
-@import './assets/components/_carousel.scss';
-@import './assets/components/_cover.scss';
-@import './assets/components/_dropdown.scss';
-@import './assets/layout/_navigation.scss';
-@import './assets/layout/_grid.scss';
-@import './assets/layout/_header.scss';
-@import './assets/layout/_footer.scss';
-@import './assets/layout/_sidebar.scss';
-@import './assets/layout/_forms.scss';
-@import './assets/pages/_home.scss';
-@import './assets/pages/_contact.scss';
-@import './assets/themes/_theme.scss';
-@import './assets/themes/_admin.scss';
-@import './assets/utils/_variables.scss';
-@import './assets/utils/_functions.scss';
-@import './assets/utils/_mixins.scss';
-@import './assets/utils/helpers.scss';
-@import './assets/vendors_bootstrap.scss';
-@import './assets/base/_reset.scss';
-@import './assets/base/_jquery-ui.scss';
+@import './base/_reset.scss';
+@import './base/_typography.scss';
+@import './components/_buttons.scss';
+@import './components/_carousel.scss';
+@import './components/_cover.scss';
+@import './components/_dropdown.scss';
+@import './layout/_navigation.scss';
+@import './layout/_grid.scss';
+@import './layout/_header.scss';
+@import './layout/_footer.scss';
+@import './layout/_sidebar.scss';
+@import './layout/_forms.scss';
+@import './pages/_home.scss';
+@import './pages/_contact.scss';
+@import './themes/_theme.scss';
+@import './themes/_admin.scss';
+@import './utils/_variables.scss';
+@import './utils/_functions.scss';
+@import './utils/_mixins.scss';
+@import './utils/_helpers.scss';
+@import './vendors/_bootstrap';
+@import './vendors/_jquery-ui.scss';
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-bg;
+    color: $color-fonts;
+    font-family: $font-family;
+}
+
+.content-wrap {
+
+    max-width: 500px;
+    text-align: center;
+
+    form {
+        > p {
+            margin-top: $mp-20;
+        }
+    }
+
+    .cases, .basicSplit {
+        margin-block: $mp-5;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    input {
+        :first-child {
+            margin-top: $mp-20;
+        }
+    }
+}

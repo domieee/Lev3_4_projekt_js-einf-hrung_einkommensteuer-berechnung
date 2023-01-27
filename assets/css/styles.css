@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111236;
+  color: #D1FFF9;
+  font-family: "Roboto", sans-serif;
+}
+
+.content-wrap {
+  max-width: 500px;
+  text-align: center;
+}
+.content-wrap form > p {
+  margin-top: 20px;
+}
+.content-wrap .cases, .content-wrap .basicSplit {
+  margin-block: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content-wrap input :first-child {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
